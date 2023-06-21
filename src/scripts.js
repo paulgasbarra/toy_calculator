@@ -1,31 +1,4 @@
-class Calculator {
-    constructor(previousOperand, currentOperand) {
-        this.previousOperand = previousOperand;
-        this.currentOperand = currentOperand;
-    }
-
-    clear() {
-        this.currentOperand = "";
-        this.previousOperand = "";
-        this.operation = "";
-    }
-
-    delete() {
-
-    }
-
-    appendNumber(number) {
-        this.currentOperand = this.currentOperand + number;
-    }
-
-    chooseOperation(operation) {
-
-    }
-
-    compute() {
-
-    }
-}
+const Calculator = require('./calculator.js');
 
 const currentOperand = "";
 const previousOperand = "";
@@ -37,24 +10,30 @@ const operationTextElement = document.getElementsByClassName('operation')[0];
 
 const calculator = new Calculator(previousOperand, currentOperand);
 
+const updateDisplay = (currentOperand, previousOperand, operation) => {
+  currentOperandTextElement.innerText = currentOperand;
+  previousOperandTextElement.innerText = previousOperand;
+  operationTextElement.innerText = operation;
+};
+
 const numberButtons = document.getElementsByClassName('button digit');
 Array.from(numberButtons).forEach((button) => {
   button.addEventListener('click', (event) => {
     calculator.appendNumber(event.target.innerText);
-    currentOperandTextElement.innerText = calculator.currentOperand;
+    updateDisplay(calculator.currentOperand, calculator.previousOperand, calculator.operation);
   });
 });
 
 const operatorButtons = document.getElementsByClassName('button operator');
 Array.from(operatorButtons).forEach((button) => {
   button.addEventListener('click', (event) => {
-    console.log(event.target.innerText);
+    calculator.chooseOperation(event.target.innerText);
   });
 });
 
 const equalsButton = document.getElementsByClassName('button equals')[0];
 equalsButton.addEventListener('click', (event) => {
-    console.log(event.target.innerText);
+    calculator.compute();
 });
 
 const deleteButton = document.getElementsByClassName('button del')[0];
