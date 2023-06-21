@@ -2,6 +2,10 @@ body {
     background-color: rgb(127, 167, 235);
 }
 
+.logo {
+    padding: 0.5rem;
+}
+
 .calculator {
     width: 20rem;
     height: auto;
