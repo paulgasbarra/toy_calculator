@@ -49,9 +49,9 @@ class Calculator {
                 this.compute();
                 this.calculated = false;
             };
-            this.operation = operation;
             this.previousOperand = this.currentOperand;
-            this.currentOperand = "";   
+            this.currentOperand = ""; 
+            this.operation = operation;  
         }
       
         compute() { 
