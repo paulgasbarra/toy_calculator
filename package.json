@@ -1,0 +1,27 @@
+{
+  "name": "equal-experts-skiddy-prurient-chlorothiazide-1b271a2460ea",
+  "version": "1.0.0",
+  "description": "* Clone this repo on your machine. * Use your IDE of choice to complete the assignment. * When you are done with the solution and have pushed it to the repo, [you can submit the assignment here](https://app.snapcode.review/submission_links/e817fb6c-20df-4086-84d7-a064f73f736e). * Once you indicate the completion, your access to the repository will be revoked. Do make sure that you have finished the solution and pushed all the relevant code to the repo.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EqualExperts-Assignments/equal-experts-skiddy-prurient-chlorothiazide-1b271a2460ea.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EqualExperts-Assignments/equal-experts-skiddy-prurient-chlorothiazide-1b271a2460ea/issues"
+  },
+  "homepage": "https://github.com/EqualExperts-Assignments/equal-experts-skiddy-prurient-chlorothiazide-1b271a2460ea#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
